@@ -30,7 +30,7 @@ function showError(){
 function showSuccess(){
     small.style.color="hsl(223, 87%, 63%)";
     small.innerText="Thank you!";
-    border.classList.remove('error-border');
+    border.classList.remove('email-error');
     email.value=''
     form.ariaExpanded;
 }
