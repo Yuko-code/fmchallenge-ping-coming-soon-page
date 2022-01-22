@@ -1,0 +1,12 @@
+.main{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    min-height:100vh;
+    text-align: center;
+    padding: 8rem 0 5rem 0;
+    @media only screen and (max-width: $bp-small){
+        padding: 7rem 0 3rem 0;
+    }
+
+}

@@ -1,0 +1,162 @@
+.header{
+
+    &__logo{
+        height:3.9rem;
+        padding: .85rem;
+        @media only screen and (max-width: $bp-small){
+            height: 2.4rem;
+            padding:.35rem 0;
+        }
+    }
+    &__heading{
+        font-size: 4.8rem;
+        font-weight: 300;
+        color: var(--color-gray);
+        margin:3rem 0 1rem 0;
+        @media only screen and (max-width: $bp-small){
+            font-size:2.2rem;
+            line-height: 3.2rem;
+        }
+
+        &--soon{
+            font-weight: 700;
+            color: var(--color-very-dark-blue);
+        }
+
+    }
+    &__paragraph{
+        font-size:2rem;
+        @media only screen and (max-width: $bp-small){
+           font-size: 1.2rem;
+        }
+    }
+}
+///////email form////////////
+.email-form{
+    margin: 4rem 0 9rem 0;
+    @media only screen and (max-width: $bp-small){
+        display:flex;
+        flex-direction: column;
+        margin: 2rem 0 7rem 0;
+        width: 80%;
+        overflow: visible;
+    }
+}
+.email,.submit-btn{
+    border-radius: 2.8rem;
+    height:5.6rem;
+    border:none;
+    font-size: 1.6rem;
+    @media only screen and (max-width: $bp-small){
+        height: 4rem;
+        font-size:1.2rem;
+    }
+}
+.email{
+    box-shadow: inset 0px 0px 0px 1px var(--color-pale-blue);
+    background-color: transparent;
+    width: 42.1rem;
+    padding: 0 3rem;
+    &:focus{
+        outline:none;
+    }
+    @media only screen and (max-width: $bp-small){
+        width: 100%;
+    }
+}
+.email-error{
+    box-shadow: inset 0px 0px 0px 1px var(--color-light-red);
+    border:none;
+}
+
+.error-msg{
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-style: italic;
+    color:var(--color-light-red);
+    display:block;
+    text-align: left;
+    margin-left:3rem;
+    @media only screen and (max-width: $bp-small){
+        font-size:1.2rem;
+        font-size: 1rem;
+        text-align: center;
+        margin:0;
+    }
+
+}
+.email::placeholder{
+    color:var(--color-pale-blue);
+    line-height: 2rem;
+    @media only screen and (max-width: $bp-small){
+        font-size:1.2rem;
+
+    }
+}
+
+.submit-btn{
+    background-color: var(--color-blue);
+    color:#fff;
+    width: 20rem;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    margin-left:1.7rem;
+    transition: .3s;
+    cursor: pointer;
+    &:hover{
+        opacity:.7;
+    }
+    @media only screen and (max-width: $bp-small){
+        width: 100%;
+        margin: 1rem 0;
+        order:1;
+    }
+}
+/////////////////////////////////////
+.img{
+    background-image: url('../images/illustration-dashboard.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:38.3rem;
+    width: 64rem;
+    @media only screen and (max-width: $bp-small){
+        height: 19.2rem;
+        width: 32rem;
+    }
+
+}
+
+.footer{
+    margin-top:9rem;
+    @media only screen and (max-width: $bp-small){
+        margin: auto 0 0 0;
+    }
+
+    &__social{
+        &-icons{
+            &:nth-of-type(2){
+                margin:0 1.2rem;
+            }
+            .icon{
+                height:3.2rem;
+                width: 3.2rem;
+                fill: var(--color-blue);
+                border: 1px solid var(--color-blue);
+                border-radius: 50%;
+                padding: .7rem;
+                transition: .3s;
+                &:hover{
+                    opacity:.5;
+                }
+            }
+        }
+    }
+    &__text{
+        font-size: 1.2rem;
+        color:var(--color-gray);
+        margin-top: 2rem;
+        @media only screen and (max-width: $bp-small){
+            font-size:1rem;
+        }
+    }
+}
+
