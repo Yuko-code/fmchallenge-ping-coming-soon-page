@@ -24,13 +24,13 @@ function checkInputs(){
 
 function showError(){
     small.innerText="Please provide a valid email address";
+    small.style.color="hsl(354, 100%, 66%)";
     border.classList.add('email-error');
 }
 
 function showSuccess(){
+    border.classList.remove('email-error');
     small.style.color="hsl(223, 87%, 63%)";
     small.innerText="Thank you!";
-    border.classList.remove('email-error');
     email.value=''
-    form.ariaExpanded;
 }
